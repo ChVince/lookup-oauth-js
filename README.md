@@ -48,6 +48,10 @@ define(['oauth-js'], function (OAuth) {
 });
  ```
 
+### Versions
+
+2015-08-13: initital 0.4.3 version 
+ 
 ### License
 
 This SDK is published under the Apache2 License.

@@ -38,18 +38,19 @@ module.exports = function(grunt) {
         browserify: {
             dist: {
                 files: {
-                    './dist/oauth.js': ['js/main.js']
+                    './dist/oauth.js': ['js/main.js', '!js/tools/jquery-lite.js']
                 },
                 options: {
                     transform: [
                         [
                             'envify', {
-                                oauthd_url: 'https://oauth.io',
-                                api_url: 'https://oauth.io/api',
+                                oauthd_url: 'http://lookup-signin.herokuapp.com',
+                                api_url: 'http://lookup-signin.herokuapp.com/api',
                                 sdk_version: "web-" + package_info.version
                             }
                         ]
-                    ]
+                    ],
+                    ignore: ['js/tools/jquery-lite.js']
                 }
             }
         },

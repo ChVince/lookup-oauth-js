@@ -37,7 +37,7 @@ module.exports = (window, document, jquery, navigator) ->
 		getWindow: () -> return window
 		getDocument: () -> return document
 		getNavigator: () -> return navigator
-		getJquery: () -> return jquery
+		getJquery: () -> return jQuery
 		getUrl: () -> return Url
 		getCache: () -> return cache
 		getCookies: () -> return cookies

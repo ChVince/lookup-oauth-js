@@ -1,16 +1,14 @@
 {
-  "name": "oauth-js",
+  "name": "lookup-oauth-js",
   "version": "0.4.3",
-  "description": "OAuth that just works",
-  "main": "dist/oauth.min.js",
+  "description": "Customized version of OAuth.io JavaScript SDK",
+  "main": "dist/oauth.js",
   "directories": {
     "test": "tests"
   },
-  "scripts": {
-    "test": "istanbul cover jasmine-node tests/unit/spec"
-  },
   "author": "oauth.io",
-  "license": "apache2",
+  "license": "Apache-2.0",
+  "repository": "git://github.com/pmstss/lookup-oauth-js.git",
   "devDependencies": {
     "grunt-contrib-coffee": "~0.10.1",
     "grunt-contrib-watch": "~0.5.3",

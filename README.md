@@ -51,6 +51,8 @@ define(['oauth-js'], function (OAuth) {
 ### Versions
 
 2015-08-13: initital 0.4.3 version 
+2015-08-13: 0.4.4 version: removing [Q]() dependency; dist file size decreased (115k -> 52k for uncompressed version)
+
  
 ### License
 

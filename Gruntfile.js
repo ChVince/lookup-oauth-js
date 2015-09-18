@@ -44,8 +44,8 @@ module.exports = function(grunt) {
                     transform: [
                         [
                             'envify', {
-                                oauthd_url: 'https://lookup-signin.herokuapp.com',
-                                api_url: 'https://lookup-signin.herokuapp.com/api',
+                                oauthd_url: 'https://oauth.silkcodeapps.de',
+                                api_url: 'https://oauth.silkcodeapps.de/api',
                                 sdk_version: "web-" + package_info.version
                             }
                         ]

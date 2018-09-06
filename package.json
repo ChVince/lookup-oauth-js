@@ -1,5 +1,5 @@
 {
-  "name": "lookup-oauth-js",
+  "name": "lookup-y-oauth-js",
   "version": "0.4.4",
   "description": "Customized version of OAuth.io JavaScript SDK",
   "main": "dist/oauth.js",
@@ -8,7 +8,7 @@
   },
   "author": "oauth.io",
   "license": "Apache-2.0",
-  "repository": "git://github.com/pmstss/lookup-oauth-js.git",
+  "repository": "git:https://github.com/ChVince/lookup-oauth-js.git",
   "devDependencies": {
     "grunt-contrib-coffee": "~0.10.1",
     "grunt-contrib-watch": "~0.5.3",

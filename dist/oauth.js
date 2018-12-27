@@ -2,7 +2,7 @@
 module.exports = {
   oauthd_url: "https://oauth.silkcodeapps.de",
   oauthd_api: "https://oauth.silkcodeapps.de/api",
-  version: "web-0.4.3",
+  version: "web-0.4.4",
   options: {}
 };
 
@@ -93,6 +93,9 @@ module.exports = function(window, document, jquery, navigator) {
       config.oauthd_url = url;
       config.oauthd_base = Url.getAbsUrl(config.oauthd_url).match(/^.{2,5}:\/\/[^/]+/)[0];
     },
+    setOAuthdApiURL: function(url) {
+      config.oauthd_api = url;
+    },
     getOAuthdURL: function() {
       return config.oauthd_url;
     },
@@ -179,6 +182,9 @@ module.exports = function(Materia) {
     setOAuthdURL: function(url) {
       config.oauthd_url = url;
       config.oauthd_base = Url.getAbsUrl(config.oauthd_url).match(/^.{2,5}:\/\/[^/]+/)[0];
+    },
+    setOAuthdApiURL: function(url) {
+      config.oauthd_api = url;
     },
     create: function(provider, tokens, request) {
       var i, make_res, make_res_endpoint, res;
@@ -1163,6 +1169,9 @@ module.exports = function(Materia) {
     },
     setOAuthdURL: function(url) {
       return Materia.setOAuthdURL(url);
+    },
+    setOAuthdApiURL: function(url) {
+      return Materia.setOAuthdApiURL(url);
     },
     signup: function(data) {
       var defer;

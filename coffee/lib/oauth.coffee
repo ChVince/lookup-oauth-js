@@ -40,6 +40,9 @@ module.exports = (Materia) ->
 			config.oauthd_url = url
 			config.oauthd_base = Url.getAbsUrl(config.oauthd_url).match(/^.{2,5}:\/\/[^/]+/)[0]
 			return
+		setOAuthdApiURL: (url) ->
+			config.oauthd_api = url
+			return
 		create: (provider, tokens, request) ->
 			return cache.tryCache(oauth, provider, true)  unless tokens
 			providers_api.fetchDescription provider  if typeof request isnt "object"

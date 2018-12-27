@@ -25,6 +25,9 @@ module.exports = (window, document, jquery, navigator) ->
 			config.oauthd_url = url
 			config.oauthd_base = Url.getAbsUrl(config.oauthd_url).match(/^.{2,5}:\/\/[^/]+/)[0]
 			return
+		setOAuthdApiURL: (url) ->
+			config.oauthd_api = url
+			return
 
 		getOAuthdURL: () -> return config.oauthd_url
 		getVersion: () -> return config.version

@@ -119,6 +119,7 @@ module.exports = (Materia) ->
 	return {
 		initialize: (public_key, options) -> return Materia.initialize public_key, options
 		setOAuthdURL: (url) -> return Materia.setOAuthdURL url
+		setOAuthdApiURL: (url) -> return Materia.setOAuthdApiURL url
 		signup: (data) ->
 			defer = $.Deferred()
 			data = data.toJson() if typeof data.toJson == 'function'

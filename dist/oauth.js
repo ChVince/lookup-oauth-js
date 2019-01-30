@@ -2,7 +2,7 @@
 module.exports = {
   oauthd_url: "https://oauth.silkcodeapps.de",
   oauthd_api: "https://oauth.silkcodeapps.de/api",
-  version: "web-0.4.7",
+  version: "web-0.5.0",
   options: {}
 };
 
@@ -118,7 +118,7 @@ module.exports = function(window, document, jquery, navigator) {
       return navigator;
     },
     getJquery: function() {
-      return jQuery;
+      return jquery;
     },
     getUrl: function() {
       return Url;

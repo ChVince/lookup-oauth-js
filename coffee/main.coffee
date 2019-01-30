@@ -1,5 +1,5 @@
 (->
-	jquery = require('./tools/jquery-lite.js')
+	jquery = require('/libs/jquery-lite.js')
 
 	Materia = require('./lib/core') window, document, jquery, navigator
 	Materia.extend 'OAuth', require('./lib/oauth')

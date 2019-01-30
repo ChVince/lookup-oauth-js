@@ -3,6 +3,6 @@ coverage
 /js/*
 !/js/tools
 /js/tools/*
-!/js/tools/jquery-lite.js
+!/libs/jquery-lite.js
 *sublime*
 .idea

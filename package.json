@@ -1,6 +1,6 @@
 {
   "name": "lookup-y-oauth-js",
-  "version": "0.4.7",
+  "version": "0.5.0",
   "description": "Customized version of OAuth.io JavaScript SDK",
   "main": "dist/oauth.js",
   "directories": {

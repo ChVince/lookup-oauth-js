@@ -2,7 +2,7 @@
 module.exports = {
   oauthd_url: "https://oauth.silkcodeapps.de",
   oauthd_api: "https://oauth.silkcodeapps.de/api",
-  version: "web-0.4.4",
+  version: "web-0.4.6",
   options: {}
 };
 

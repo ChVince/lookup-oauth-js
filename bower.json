@@ -1,6 +1,6 @@
 {
     "name": "oauth-js",
-    "version": "0.4.4",
+    "version": "0.4.6",
     "main": "dist/oauth.min.js",
     "description": "Customized version of OAuth.io JavaScript SDK",
     "license": "Apache-2.0",

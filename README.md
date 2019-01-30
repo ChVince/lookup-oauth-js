@@ -5,7 +5,6 @@ Customized version of [OAuth.io](https://oauth.io) [JavaScript SDK](https://gith
 
 ### Customization changes
 - custom server url (https://lookup-signin.herokuapp.com) in Grunfile.js envify section
-- jquery-lite is excluded from dist bundle (dist/oauth.js) as well as redundant [Q](https://github.com/kriskowal/q), which greatly decreased file size (uncompressed: 218 kB -> 52 kB). 
 
 The last change is done in pretty clumsy way (will be appreciate for more elegant hint): in core.coffee getJquery is modified to return global jQuery variable - so it works in assumption, that global jQuery is available. 
 

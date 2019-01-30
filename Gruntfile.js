@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         browserify: {
             dist: {
                 files: {
-                    './dist/oauth.js': ['js/main.js', '!js/tools/jquery-lite.js']
+                    './dist/oauth.js': ['js/main.js', 'js/tools/jquery.slim.min.js']
                 },
                 options: {
                     transform: [
@@ -49,8 +49,7 @@ module.exports = function(grunt) {
                                 sdk_version: "web-" + package_info.version
                             }
                         ]
-                    ],
-                    ignore: ['js/tools/jquery-lite.js']
+                    ]
                 }
             }
         },

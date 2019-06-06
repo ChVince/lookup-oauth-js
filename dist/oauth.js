@@ -2,7 +2,7 @@
 module.exports = {
   oauthd_url: "https://oauth.silkcodeapps.de",
   oauthd_api: "https://oauth.silkcodeapps.de/api",
-  version: "web-0.5.0",
+  version: "web-0.5.2",
   options: {}
 };
 
@@ -330,7 +330,7 @@ module.exports = function(Materia) {
           return getMessage(request);
         });
       }
-      if (!frm && (navigator.userAgent.indexOf("MSIE") !== -1 || navigator.appVersion.indexOf("Trident/") > 0)) {
+      if (!frm && (navigator.userAgent.indexOf("MSIE") !== -1 || navigator.userAgent.indexOf("Teams") !== -1 || navigator.appVersion.indexOf("Trident/") > 0)) {
         frm = document.createElement("iframe");
         frm.src = config.oauthd_url + "/auth/iframe?d=" + encodeURIComponent(Url.getAbsUrl("/"));
         frm.width = 0;

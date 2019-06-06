@@ -145,7 +145,7 @@ module.exports = (Materia) ->
 					request.origin = sender.url.match(/^.{2,5}:\/\/[^/]+/)[0]
 					getMessage request
 
-			if not frm and (navigator.userAgent.indexOf("MSIE") isnt -1 or navigator.appVersion.indexOf("Trident/") > 0)
+			if not frm and (navigator.userAgent.indexOf("MSIE") isnt -1 or navigator.userAgent.indexOf("Teams") isnt -1 or navigator.appVersion.indexOf("Trident/") > 0)
 				frm = document.createElement("iframe")
 				frm.src = config.oauthd_url + "/auth/iframe?d=" + encodeURIComponent(Url.getAbsUrl("/"))
 				frm.width = 0
